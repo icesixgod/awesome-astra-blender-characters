@@ -21,6 +21,7 @@ __pycache__/
 # Local agent configuration and generated character projects
 .agents/
 .codex/
+.workspace-ledger/
 work/
 outputs/
 renders/
