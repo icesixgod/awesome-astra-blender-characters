@@ -1,0 +1,15 @@
+# Operating system
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+.venv/
+target/
+dist/
+build/
+coverage/
