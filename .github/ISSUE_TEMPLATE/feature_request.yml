@@ -1,0 +1,22 @@
+name: Workflow improvement / 流程改进
+description: Suggest a focused improvement / 提出有具体场景的改进
+title: "[Idea] "
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario and current problem / 场景与现有问题
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior / 期望行为
+      description: Explain which workflow decision should change and why.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Evidence or validation plan / 证据或验证方法
+      description: Clearly label ideas that have not been tested. Do not include private data or unauthorized assets.

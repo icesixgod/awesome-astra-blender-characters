@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blender 人物制作工作流"
+  short_description: "从人物参考图推进脸部和角色制作，以多视图检查区分外形、工程与用途验收"
+  default_prompt: "使用 $blender-character-workflow，根据我的参考图和现有工程制作 Blender 人物，先确认范围并完成多视图检查。"

@@ -1,0 +1,33 @@
+name: Bug report / 问题反馈
+description: Report a reproducible skill or packaging problem / 提交可复现的问题
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "请移除凭证、私人路径和未授权素材。Remove secrets, private paths, and assets you cannot redistribute."
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      description: OS, agent host, skill commit or version, Blender version if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and scope / 复现步骤与范围
+      description: Include the request, relevant workflow stage, and a minimal reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and observed result / 预期与实际结果
+      description: Distinguish appearance, project integrity, and intended-use failures.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / 证据
+      description: Optional sanitized logs or authorized images. For visual comparisons, state the camera and project version.

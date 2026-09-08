@@ -13,3 +13,22 @@ target/
 dist/
 build/
 coverage/
+
+# Python tooling
+__pycache__/
+*.py[cod]
+
+# Local agent configuration and generated character projects
+.agents/
+.codex/
+work/
+outputs/
+renders/
+*.blend
+*.blend[0-9]*
+*.blend@
+*.log
+
+# Local credentials
+*.pem
+*.key

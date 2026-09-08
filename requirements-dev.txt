@@ -1,0 +1,2 @@
+# Used only by repository metadata and link validation.
+PyYAML>=6.0,<7.0
