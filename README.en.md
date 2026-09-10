@@ -10,15 +10,17 @@ The package contains instructions and production references. It currently includ
 
 ## Workflow and capabilities
 
-1. Inspect the original image, existing project, scope, and intended use.
+1. Inspect the original image, existing project, scope, and intended use; state any scope assumptions.
 2. For a new character, generate or reuse nine checked references: eight horizontal directions, 45° apart, plus a top view.
 3. Align references, cameras, scale, and landmarks.
-4. Build the face at low detail; inspect front, side, and oblique neutral renders before refining features.
-5. Build hair volumes, strands, materials, local UVs, and illustration details.
+4. Build the face at low detail; inspect front, side, and oblique neutral renders, especially chin closure and depth, before refining features or building the full hairstyle.
+5. Build hair volumes, native strands, root coverage, crown-to-long-hair transitions, materials, local UVs, and illustration details.
 6. Extend to body, clothing, accessories, or rigging when requested.
-7. Inspect appearance, project integrity, and intended use separately; package and reopen the final `.blend`.
+7. Inspect appearance, project integrity, and intended use separately; state UV and intersection-check coverage, then package and reopen the final `.blend`.
 
-Focused repairs enter the relevant stage without regenerating every reference. Documentation work does not launch Blender or generate images. Diagnostics cover transparency, skin-color contamination in hair UVs, gaps, intersections, pole distortion, version identity, and camera framing.
+Focused repairs enter the relevant stage without regenerating every reference. Documentation work does not launch Blender or generate images. An unanswered scope question does not authorize omitting visible parts of the reference. Compare actual renders of the problem view and adjacent views after each change, revisit the cause if it persists, and produce the delivery views from one explicitly saved version once the local result is stable.
+
+[Illustration-finish diagnostics](skills/blender-character-workflow/references/static-illustration-finish.md) cover image-texture UV validation, skin-tone adjustments that preserve blush, separate eye-surface/iris/lens checks, and isolation of hair support surfaces, inner layers, and native strands. [Execution reliability](skills/blender-character-workflow/references/blender-reliability.md) covers native-curve and shader-mode inputs, state preservation during local edits, and recovery from real-time viewport failures. Existing guidance also covers transparency, gaps, intersections, pole distortion, version identity, and camera framing.
 
 Body, animation, printing, and export guidance is included, but the public package does not yet include end-to-end validation examples for those uses.
 
@@ -81,6 +83,8 @@ Specify the primary reference, scope, intended use, features to preserve, and ou
 ## Limits
 
 Generated hidden views are design completions, not calibrated projections; the original image remains the primary reference. Neutral renders, file reopening, and landmark error each provide limited evidence, and none alone proves overall likeness. Image-projected lighting requires separate evaluation for relighting or animation. Static validation does not establish animation or printing suitability.
+
+Using UVs for every image texture does not give every hair strand an independently paintable atlas. Valid UV ranges, nondegenerate UV faces, and limited intersection sampling do not establish distortion-free mapping, brush usability, or an intersection-free assembly. Reports must identify the checked objects, methods, and untested areas.
 
 ## Contents and development
 
